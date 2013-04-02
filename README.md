@@ -155,7 +155,7 @@ Syntax
 Mainly, a DNF file is formed by three sections: header, nodes and edges. Each section is defined as follows:
 
 ************
-** HEADER **
+**HEADER**
 
 	[header]
 
@@ -171,9 +171,9 @@ In the header section you can put all information about graph, dynamics and attr
 
 where the `timetype` and `start` attributes are mandatory, whereas the `end` attribute can be omitted.
 
-If you don't have a specific "start" time, you can simply write: `start=0`. The attribute `timetype` explicits what "type of time" you want to use. At present it supports: `timestamp, datetime or custom`. The first one is defined as the UNIX time: http://en.wikipedia.org/wiki/Unix_time. Datetimes are ISO 8601 dates, but only the full zulu form is allowed. In the end, the custom type could be whatever you define in your software.
+If you don't have a specific "start" time, you can simply write: `start=0`. The attribute `timetype` explicits what "type of time" you want to use. At present it supports: `timestamp, datetime or custom`. The first one is defined as the UNIX time: [wiki](http://en.wikipedia.org/wiki/Unix_time). Datetimes are ISO 8601 dates, but only the full zulu form is allowed. In the end, the custom type could be whatever you define in your software.
 
-In addition, you may use the **timeunit** attribute (not mandatory) to indicate how long is each gap. For instance, if you have a `timeunit=5`, then a gap will be far from its previous gap five units of time. With regard to the continuous gaps, you will have "**timeunit_value**" times the continuous gap, e.g., +3 will be 15. If you simply don't express the timeunit attribute, then the default time unit is equal to **1**.
+In addition, you may use the **timeunit** attribute (not mandatory) to indicate how long is each gap. For instance, if you have a `timeunit=5`, then a gap will be far from its previous gap five units of time. With regard to the continuous gaps, you will have **timeunit_value** times the continuous gap, e.g., +3 will be 15. If you simply don't express the timeunit attribute, then the default time unit is equal to **1**.
 
 *[third line]* Here you can write any attributes about your nodes or edges, according the following syntax:
 
@@ -182,7 +182,7 @@ In addition, you may use the **timeunit** attribute (not mandatory) to indicate 
 If your labels are equal to node or edge IDs, then you can omit them. <u>All attributes should be typed and considered as string.</u>
 
 ***********
-** NODES **
+**NODES**
 
 	[nodes]
 
@@ -201,7 +201,7 @@ where **attr_values** are present <u>if and only if in the **nodeattrs** you do 
 where (gap1,gap2,gap3,...) are present <u>if and only if the graph type is dynamic</u>.
 
 ***********
-** EDGES **
+**EDGES**
 
 	[edges]
 
