@@ -243,3 +243,8 @@ Need help?
 ----------
 
 What a question! Of course. Send a pull request if you write a parser, a validator or if you'd like to suggest an improvement in the format specification. We need your help!
+
+Gephi plugins
+-------------
+
+* [DNF Importer](https://github.com/umbertogriffo/EvolvingDynamicNetwork/tree/DNFImporter)
